@@ -1,0 +1,39 @@
+##
+# Sndicate ignored files
+#
+# We generally ignore 4 types of files in
+# all of our projects:
+#
+# - System files: Because your system isn't the project
+# - Build results: Builds are distributed separately from developer repos
+# - Environment files: Besides the general requirements, never force an environment on other devs
+# - Dependencies: Should be installed separately
+##
+
+##
+# System files
+##
+.DS_Store
+
+##
+# Build results
+##
+dist/
+
+##
+# Environment files
+##
+.nvmrc
+*.sublime-project
+*.sublime-workspace
+
+##
+# Dependencies
+##
+core/public/vendor
+node_modules/
+
+##
+# Everything else
+##
+*.sqlite3

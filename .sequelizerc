@@ -1,0 +1,11 @@
+/**
+ * Sequelize CLI configuration file
+ */
+
+var path = require('path');
+
+module.exports = {
+  'config': path.resolve('core', 'config', 'database.json'),
+  'migrations-path': path.resolve('core', 'migrations'),
+  'models-path': path.resolve('core', 'models')
+};
